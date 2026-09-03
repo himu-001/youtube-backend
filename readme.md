@@ -1,86 +1,67 @@
-# Video Hosting Backend
+# 🎥 Video Hosting Backend
 
-This is a complete backend project built while learning and implementing modern backend development practices using JavaScript.
+A backend application for a video hosting platform inspired by YouTube. This project is being built while learning and implementing modern backend development practices using Node.js, Express.js, MongoDB, and Mongoose.
 
-* [Model Link](your-model-link)
-* [Video Playlist](your-playlist-link)
-
----
-
-# Summary of this Project
-
-This project is a comprehensive backend application built with **Node.js, Express.js, MongoDB, Mongoose, JWT, bcrypt**, and other modern backend technologies.
-
-The project focuses on building a complete video hosting platform similar to YouTube. It includes features such as:
-
-* User registration and login
-* Authentication and authorization
-* Video upload and management
-* Likes and dislikes
-* Comments and replies
-* Channel subscriptions and unsubscriptions
-* Access tokens and refresh tokens
-* Secure password hashing using bcrypt
-* And many more backend features
-
-The project follows standard backend development practices, including **JWT authentication, bcrypt password hashing, access tokens, refresh tokens**, and structured API development.
+> 🚧 This project is currently under development.
 
 ---
 
-# 🛠️ Tech Stack
+## 📖 About The Project
 
-* Node.js
-* Express.js
-* MongoDB
-* Mongoose
-* JSON Web Tokens (JWT)
-* bcrypt
+This project focuses on building a complete backend for a video hosting platform.
 
----
+The backend handles core functionality such as user authentication, video management, comments, likes, subscriptions, and token-based authentication.
 
-# ⚙️ Environment Variables
-
-Create a `.env` file in the root directory and add the following variables:
-
-```env
-PORT=3000
-MONGODB_URI=your_mongodb_connection_string
-ACCESS_TOKEN_SECRET=your_access_token_secret
-ACCESS_TOKEN_EXPIRY=1d
-REFRESH_TOKEN_SECRET=your_refresh_token_secret
-REFRESH_TOKEN_EXPIRY=10d
-```
+The project follows a structured backend architecture and focuses on implementing real-world backend concepts.
 
 ---
 
-# 🚀 Installation
+## ✨ Features
 
-Clone the repository:
-
-```bash
-git clone <your-repository-url>
-```
-
-Navigate to the project directory:
-
-```bash
-cd video-hosting-backend
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm run dev
-```
+- User registration and login
+- Authentication and authorization
+- Access Token and Refresh Token authentication
+- Secure password hashing using bcrypt
+- Video upload and management
+- Video thumbnails
+- Video publishing
+- View tracking
+- Likes and dislikes
+- Comments
+- Channel subscriptions and unsubscriptions
+- User profile management
+- MongoDB aggregation pipelines
+- Pagination using `mongoose-aggregate-paginate-v2`
+- Centralized error handling
+- Structured API responses
 
 ---
 
-# 📌 Project Status
+## 🛠️ Tech Stack
 
-🚧 This project is currently under development and new features will be added as the project progresses.
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JSON Web Tokens (JWT)
+- bcrypt
+- Cloudinary
+- Multer
+- mongoose-aggregate-paginate-v2
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+│
+├── controllers/
+├── models/
+├── routes/
+├── middlewares/
+├── utils/
+├── db/
+│
+├── app.js
+└── index.js
