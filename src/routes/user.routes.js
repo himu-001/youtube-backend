@@ -9,6 +9,7 @@ import {
     logoutUser,
     refreshAccessToken,
     registerUser,
+    updateAccountDetails,
     updateUserAvatar,
     updateUserCoverImage
 } from "../controllers/user.controllers.js";
@@ -44,3 +45,4 @@ router.route("/cover-image").patch(verifyJWT, upload.single("coverImage"), updat
 router.route("/channel/:username").get(verifyJWT, getUserChannelProfile);
 router.route("/watch-history").get(verifyJWT, getWatchHistory);
 export default router;
+
