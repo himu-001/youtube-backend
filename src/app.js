@@ -30,6 +30,12 @@ app.use("/api/v1/users", userRouter);
 
 // playList Routes
 import playlistRouter from "./routes/playlist.routes.js"
+// routes declaration
 app.use("/api/v1/playlists", playlistRouter);
+
+// tweets Routes
+import tweetRouter from "./routes/tweet.routes.js"
+// routes declaration
+app.use("/api/v1/tweets", tweetRouter);
 
 export default app;
