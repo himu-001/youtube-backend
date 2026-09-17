@@ -38,4 +38,14 @@ import tweetRouter from "./routes/tweet.routes.js"
 // routes declaration
 app.use("/api/v1/tweets", tweetRouter);
 
+// subscription Routes
+import subscriptionRouter from "./routes/subscription.routes.js"
+// routes declaration
+app.use("/api/v1/subscriptions", subscriptionRouter);
+
+// subscription Routes
+import likeRouter from "./routes/like.routes.js"
+// routes declaration
+app.use("/api/v1/likes", likeRouter);
+
 export default app;
