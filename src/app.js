@@ -48,4 +48,9 @@ import likeRouter from "./routes/like.routes.js"
 // routes declaration
 app.use("/api/v1/likes", likeRouter);
 
+// comment Routes
+import commentRouter from "./routes/comment.routes.js";
+// routes declaration
+app.use("/api/v1/comments", commentRouter);
+
 export default app;
