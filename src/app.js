@@ -53,4 +53,13 @@ import commentRouter from "./routes/comment.routes.js";
 // routes declaration
 app.use("/api/v1/comments", commentRouter);
 
+// healthCheck Routes
+import healthcheckRouter from "./routes/healthCheck.routes.js";
+// routes declaration
+app.use("/api/v1/healthcheck", healthcheckRouter);
+
+// dashboard Routes
+import dashboardRouter from "./routes/dashboard.routes.js";
+app.use("/api/v1/dashboard", dashboardRouter);
+
 export default app;
